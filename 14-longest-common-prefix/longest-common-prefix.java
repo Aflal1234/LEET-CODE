@@ -4,15 +4,8 @@ class Solution {
         String f = strs[0];
         String l = strs[strs.length-1];
         int k = 0;
-        for(int i = 0 ; i < f.length() && i < l.length() ; i ++)
-        {
-            if(f.charAt(i)==l.charAt(i))
-            {
-                k++;
-            }
-            else 
-            break;
-        }
+        while (( k < f.length() && k < l.length() )&&(f.charAt(k)==l.charAt(k)))
+        k++;
         return f.substring(0,k);
     }
 }
