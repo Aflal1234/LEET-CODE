@@ -1,10 +1,8 @@
 class Solution {
     public int singleNumber(int[] nums) {
-        int res = 0;
+        int r = 0;
         for (int i : nums)
-        {
-            res ^= i;
-        }
-        return res ; 
+        r^=i;
+        return r;
     }
 }
