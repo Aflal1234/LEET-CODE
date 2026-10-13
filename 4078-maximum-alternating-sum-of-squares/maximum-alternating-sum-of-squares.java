@@ -12,8 +12,12 @@ class Solution{
         int n=nums.length;
         for(int i=0;i<n;i++){
             long a=(long)nums[i]*nums[i];
-            if(i<n/2) sum-=a;
-            else sum+=a;
+            if(i<n/2){
+                sum-=a;
+            }
+            else{
+                sum+=a;
+            }
         }
         return sum;
     }
