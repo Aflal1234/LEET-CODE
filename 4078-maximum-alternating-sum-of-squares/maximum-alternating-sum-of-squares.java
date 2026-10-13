@@ -1,4 +1,3 @@
-
 import java.util.*;
 class Solution{
     public long maxAlternatingSum(int[] nums){
@@ -11,7 +10,7 @@ class Solution{
         long sum=0;
         int n=nums.length;
         for(int i=0;i<n;i++){
-            long a=(long)nums[i]*nums[i];
+            long a=nums[i]*nums[i];
             if(i<n/2){
                 sum-=a;
             }
